@@ -66,35 +66,32 @@ for(let i=1;i<=10;i++){
     
 }
 
-//
+// 6
+// count how many numbers between 1 and 50 are divisible by 3
 
-for(let i=1;i<=10;i++){
-    console.log(i);
-    
-}
-//
-for(let i=10;i>=1;i--){
-    console.log(i);
-    
-}
-
-//
-for(let i=1;i<=20;i++){
-    if(i%2===0){
-        console.log("3.",i);
-        
+let cou=0;
+for(let i=1;i<=50;i++){
+    if(i%3===0){
+       cou+=1 
     }
 }
+    console.log("6.",cou);
 
-//
-let sum=0;
-for(let i=1;i<=100;i++){
-    sum=sum+i
-}
-console.log(sum);
-
-//
-for(let i=1;i<=10;i++){
-    console.log(5*i);
+// 7
+// find the factorial of 5!
+let mul=1;
+for(let i=5;i>=1;i--){
+        mul*=i
     
 }
+console.log(mul);
+
+// 8
+// Reverse a string using a loop
+
+let str="Berchman";
+let reversed="";
+for(let i=str.length-1;i>=0;i--){
+    reversed+=str[i]
+}
+console.log(reversed);
