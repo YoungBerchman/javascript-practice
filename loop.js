@@ -81,7 +81,7 @@ console.log(mul);
 // 8
 // Reverse a string using a loop
 
-console.clear();
+// console.clear();
 let str = "Berchman";
 let reverse = "";
 for (let i = str.length - 1; i >= 0; i--) {
