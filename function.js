@@ -179,3 +179,20 @@ function squareOfLarger(a, b) {
   return square2(large(a, b));
 }
 console.log(squareOfLarger(-9, 5));
+
+function small(a, b) {
+  if (a <= b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+console.log(small(9, 7));
+
+function square3(num) {
+  return num * num;
+}
+function squareOfSmall(a, b) {
+  return square3(small(a, b));
+}
+console.log(squareOfSmall(5, 2));
