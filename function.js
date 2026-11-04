@@ -179,6 +179,7 @@ function squareOfLarger(a, b) {
   return square2(large(a, b));
 }
 console.log(squareOfLarger(-9, 5));
+//
 
 function small(a, b) {
   if (a <= b) {
@@ -196,3 +197,83 @@ function squareOfSmall(a, b) {
   return square3(small(a, b));
 }
 console.log(squareOfSmall(5, 2));
+
+//
+
+function pray(name = "Good morning") {
+  console.log("Hello" + " " + name);
+}
+pray();
+pray("Good afternoon");
+pray("Good evening");
+//
+
+function first(name = "my guy") {
+  console.log("Hello" + " " + name);
+}
+first();
+first("Berchman");
+
+//
+function wel(name, place = "Lagos") {
+  console.log("Welcome to", place, name);
+}
+wel("praise", "Abuja");
+
+//
+const mul2 = (a, b) => {
+  return a * b;
+};
+console.log(mul2(4, 4));
+//
+const mul5 = (a, b) => a * b;
+console.log(mul5(2, 4));
+//
+const swt = (num) => num * num;
+console.log(swt(3));
+//
+const sum1 = (a, b) => a + b;
+//
+const together = (first, last) => first + " " + last;
+//
+const IsOdd = (num) => {
+  if (num % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const kic = function (num) {
+  return num * num;
+};
+console.log(kic(4));
+// CALLBACK FUNCTION
+//
+
+function sayHi() {
+  console.log("Hi!");
+}
+sayHi();
+
+function robot(job) {
+  job();
+  job();
+}
+robot(sayHi);
+
+//
+function robot1(toy) {
+  toy();
+  toy();
+  toy();
+  toy();
+}
+function receive() {
+  console.log("Praise");
+}
+robot1(receive);
+
+robot1(function () {
+  console.log("praise");
+});
